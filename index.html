@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ursinho.png" type="image/x-icon">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="name">
+            <input placeholder="Nome" type="text" name="nameInput" id="nameInput">
+            <button class="changeNameButton" id="changeNameButton" onclick="changeName()">
+                <i class="fas fa-thumbs-up"></i>
+            </button>
+        </div>
+        <div class="stats">
+            <p class="statsStyle" id="currentName">Nome: Tama</p>
+            <p class="statsStyle" id="hunger">Fome: 20</p>
+            <p class="statsStyle" id="health">Saúde: 80</p>
+            <p class="statsStyle" id="age">Idade: 0</p>
+        </div>
+        <div class="tamagotchi">
+            <img src="ursinho.png" alt="tamagotchi">
+        </div>
+
+        <div class="tama-chat">
+            <p id="tama-quotes">Tama: Olá! Meu nome é Tama!</p>
+        </div>
+
+        <div class="actions">
+            
+            <div class="feedAction">
+                <p class="actionLabelStyle" id="feedLabel">Comer</p>
+                <button class="actionButtonStyle" onclick="feed()">
+                    <i class="fas fa-utensils"></i>
+                </button>
+            </div>
+
+            <div class="sleepAction">
+                <p class="actionLabelStyle" id="sleepLabel">Dormir</p>
+                <button class="actionButtonStyle" onclick="sleep()">
+                    <i class="fas fa-bed"></i>
+                </button>
+            </div>
+            
+            <div class="playAction">
+                <p class="actionLabelStyle" id="ageLabel">Aniversário</p>
+                <button class="actionButtonStyle" onclick="birthday()">
+                    <i class="fas fa-birthday-cake"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
